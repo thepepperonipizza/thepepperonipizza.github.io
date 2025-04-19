@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
         if (!targetPage.classList.contains('loaded')) {
           try {
-            const response = await fetch(`../pages/${pageId}.html`);
+            const response = await fetch(`src/pages/${pageId}.html`);
             const html = await response.text();
             targetPage.innerHTML = html;
             targetPage.classList.add('loaded');
