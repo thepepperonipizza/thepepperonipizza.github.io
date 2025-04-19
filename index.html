@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pepperoni Pizza</title>
+  <link rel="stylesheet" href="src/main/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/media/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/media/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/media/favicon/favicon-16x16.png">
+  <link rel="manifest" href="src/media/favicon/site.webmanifest">
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero" id="hero-section">
+      <img class="hero-image" src="src/media/minitina/minitina.png" alt="Mini Tina">
+      <h1>Hi! I'm Tina</h1>
+      <div class="scroll-indicator" id="scroll-down">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
+    </section>
+    
+    <!-- Content -->
+    <section class="content-area" id="content-section">
+      <div class="sidebar centered" id="sidebar">
+        <img id="profile-icon" class="profile-icon" src="src/media/minitina/minitina-decapitated.png" alt="Mini Tina">
+        <button class="nav-button" data-page="home">Home</button>
+        <button class="nav-button" data-page="about">About</button>
+        <button class="nav-button" data-page="gallery">Gallery</button>
+        <button class="nav-button" data-page="blog">Blog</button>
+        <button class="nav-button" data-page="contact">Contact</button>
+      </div>
+      <div class="main-content" id="main-content" style="overflow-y: auto; height: 100vh;">
+        <div id="home" class="content-page"></div>
+        <div id="about" class="content-page"></div>
+        <div id="gallery" class="content-page"></div>
+        <div id="blog" class="content-page"></div>
+        <div id="contact" class="content-page"></div>
+      </div>
+    </section>
+  </div>
+  
+  <script src="src/main/main.js" type="text/javascript"></script>
+</body>
+</html>
